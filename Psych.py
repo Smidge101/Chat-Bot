@@ -1,6 +1,6 @@
 # Psych.py
 
-import pandas as pd
+import re
 
 def read_file(file_path):
     """
@@ -13,29 +13,36 @@ def read_file(file_path):
         print(f"Error: The file at {file_path} was not found.")
         return None
 
-def chunk_text(text, chunk_size):
+def semantic_chunking(text):
     """
-    Splits the text into chunks of the specified size.
+    Splits the text into semantic chunks based on patterns (e.g., course titles or semesters).
     """
-    chunks = [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
-    return chunks
+    # Define a regex pattern to identify sections (e.g., "Semester 1", "Course: XYZ")
+    pattern = r"(Semester\s+\d+|Course:\s+[^\n]+)"
+    chunks = re.split(pattern, text)
+    
+    # Combine the pattern matches with their corresponding content
+    semantic_chunks = []
+    for i in range(1, len(chunks), 2):
+        header = chunks[i].strip()
+        content = chunks[i + 1].strip() if i + 1 < len(chunks) else ""
+        semantic_chunks.append(f"{header}\n{content}")
+    
+    return semantic_chunks
 
 def main():
     # Specify the path to your .txt file
-    file_path = "example.txt"  # Replace with your .txt file path
+    file_path = "C:\Users\Tyrique\Downloads\Comp Sci stuff\325\cs325_quiz2\Chat-Bot\Psych-B.A..txt"  # Replace with your .txt file path
 
     # Read the content of the file
     text = read_file(file_path)
     if text is None:
         return
 
-    # Define the chunk size
-    chunk_size = 100  # Adjust the chunk size as needed
+    # Perform semantic chunking
+    chunks = semantic_chunking(text)
 
-    # Chunk the text
-    chunks = chunk_text(text, chunk_size)
-
-    # Print the chunks
+    # Print the semantic chunks
     for i, chunk in enumerate(chunks):
         print(f"Chunk {i + 1}:\n{chunk}\n")
 
