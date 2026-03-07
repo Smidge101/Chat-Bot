@@ -36,7 +36,7 @@ def semantic_chunking(text):
 
 def main():
     # Specify the path to your .txt file
-    file_path = "C:\\Users\\Tyrique\\Downloads\\Comp Sci stuff\\325\\cs325_quiz2\\Chat-Bot\\Psych-B.A..txt"  # Replace with your .txt file path
+    file_path = "Psych-B.A..txt"  # Replace with your .txt file path
 
     # Read the content of the file
     text = read_file(file_path)
