@@ -15,17 +15,19 @@ def read_file(file_path):
 
 def semantic_chunking(text):
     """
-    Splits the text into semantic chunks based on patterns (e.g., course titles or semesters).
+    Splits the text into semantic chunks per semester, using lines like
+    'Year X (Fall/Spring Semester)' as boundaries.
     """
-    # Define a regex pattern to identify sections (e.g., "Semester 1", "Course: XYZ")
-    pattern = r"(Semester\s+\d+|Course:\s+[^\n]+)"
-    chunks = re.split(pattern, text)
+
+    # Match lines like: Year 1 (Fall Semester) or Course: Introduction to Psychology
+    pattern = r"(?m)^(Year\s+\d+\s*\([^)]*Semester[^)]*\))"
+    parts = re.split(pattern, text)
     
-    # Combine the pattern matches with their corresponding content
+    # parts[0] is any intro text before the first Year… line
     semantic_chunks = []
-    for i in range(1, len(chunks), 2):
-        header = chunks[i].strip()
-        content = chunks[i + 1].strip() if i + 1 < len(chunks) else ""
+    for i in range(1, len(parts), 2):
+        header = parts[i].strip()
+        content = parts[i + 1].strip() if i + 1 < len(parts) else ""
         semantic_chunks.append(f"{header}\n{content}")
     
     return semantic_chunks
