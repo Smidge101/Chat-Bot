@@ -34,7 +34,7 @@ def semantic_chunking(text):
 
 def main():
     # Specify the path to your .txt file
-    file_path = "sample.txt"  # Replace with your .txt file path
+    file_path = "sample1.txt"  # Replace with your .txt file path
 
     # Read the content of the file
     text = read_file(file_path)
