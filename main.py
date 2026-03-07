@@ -1,70 +1,52 @@
-import tensorflow as tf
-import tensorflow_hub as hub
-from sklearn.cluster import KMeans
-import numpy as np
+import re
 
-def embed_sentences(sentences):
+def read_file(file_path):
     """
-    Embed sentences using the Universal Sentence Encoder.
-    
-    Parameters:
-    sentences (list): A list of sentences to be embedded.
-    
-    Returns:
-    np.array: An array of sentence embeddings.
+    Reads the content of a .txt file and returns it as a string.
     """
-    embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
-    embeddings = embed(sentences)
-    return np.array(embeddings)
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            return file.read()
+    except FileNotFoundError:
+        print(f"Error: The file at {file_path} was not found.")
+        return None
 
-def semantic_chunk(sentences, num_clusters):
+def semantic_chunking(text):
     """
-    Perform semantic chunking by clustering sentences based on their embeddings.
-    
-    Parameters:
-    sentences (list): A list of sentences to be chunked.
-    num_clusters (int): The number of clusters to form.
-    
-    Returns:
-    list: A list of clusters, each containing similar sentences.
+    Splits the text into semantic chunks per semester.
     """
-    # Embed the sentences
-    embeddings = embed_sentences(sentences)
+    pattern = r"(?m)^(Year\s+\d+\s*\([^)]*Semester[^)]*\))"
+    parts = re.split(pattern, text)
     
-    # Perform KMeans clustering
-    kmeans = KMeans(n_clusters=num_clusters, random_state=42)
-    kmeans.fit(embeddings)
+    semantic_chunks = []
+    i = 1
+    while i < len(parts):
+        header = parts[i].strip()
+        if header:  # Skip if header is empty/whitespace
+            content = parts[i + 1].strip() if i + 1 < len(parts) else ""
+            chunk = f"{header}\n{content}".strip()
+            if chunk:  # Only add non-empty chunks
+                semantic_chunks.append(chunk)
+        i += 2
     
-    # Group sentences by clusters
-    clusters = [[] for _ in range(num_clusters)]
-    for i, label in enumerate(kmeans.labels_):
-        clusters[label].append(sentences[i])
-    
-    return clusters
-
-# Sample text
-file_path = 'sample.txt'
-try:
-    with open(file_path, 'r') as file:
-        content = file.read()
-except FileNotFoundError:
-    print(f"Error: The file '{file_path}' was not found.")
-except Exception as e:
-    print(f"An error occurred: {e}")
-
-# Split text into sentences
-sentences = content.split('. ')
-sentences[-1] = sentences[-1].rstrip('.')
-
-# Perform semantic chunking
-num_clusters = 3
-clusters = semantic_chunk(sentences, num_clusters)
-
-# Print the clusters
-for i, cluster in enumerate(clusters):
-    print(f"Cluster {i+1}:")
-    for sentence in cluster:
-        print(f"- {sentence}")
-    print()
+    return semantic_chunks
 
 
+def main():
+    # Specify the path to your .txt file
+    file_path = "sample1.txt"  # Replace with your .txt file path
+
+    # Read the content of the file
+    text = read_file(file_path)
+    if text is None:
+        return
+
+    # Perform semantic chunking
+    chunks = semantic_chunking(text)
+
+    # Print the semantic chunks
+    for i, chunk in enumerate(chunks):
+        print(f"Chunk {i + 1}:\n{chunk}\n")
+
+if __name__ == "__main__":
+    main()
