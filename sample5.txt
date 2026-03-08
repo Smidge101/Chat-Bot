@@ -1,0 +1,68 @@
+Sample Curriculum for the Bachelor of Science in Computer Science
+
+Year 1 (Fall Semester)
+(3) CS 111 Concepts of Computer Science (BICS)
+(3) CS 140 Introduction to Computing I
+(3) ENG 101 English Composition I
+(5) MATH 150 Calculus I (FQR)
+(3) ACS 103 Interpersonal Communication Skills (ERGU or EREG)*
+(1) FST 101 Succeeding & Engaging at SIUE
+18 – Total Credits
+
+Year 1 (Spring Semester)
+(3) CS 150 Introduction to Computing II
+(3) ENG 102 English Composition II
+(5) MATH 152 Calculus II (BPS)
+(3) Breadth Fine & Performing Arts (BFPA)
+(3) Breadth Humanities (BHUM)
+17 – Total Credits
+
+Year 2 (Fall Semester)
+(3) CS 234 Database and Web System Development
+(3) MATH 224 or MATH 223 Discrete Mathematics (BPS)
+(3-4) MATH elective
+(4-5) Laboratory Science Sequence I (BPS, EL)
+(3) RA 101 Reasoning & Argumentation
+16-18 – Total Credits
+
+Year 2 (Spring Semester)
+(3) CS 286 Intro to Computer Organization & Architecture
+(3) MATH Elective
+(4-5) Laboratory Science Sequence II (BPS, EL)
+(3-4) STAT 244 or STAT 380 Statistics for Applications (PS)
+ 13-15 – Total Credits
+
+Year 3 (Fall Semester)
+(3) CS 360 Ethical and Social Implications of Computing
+(3) CS 340 Algorithms and Data Structures
+(3) CS 314 Operating Systems
+(4-5) Lab Science Elective
+13-14 – Total Credits
+
+Year 3 (Spring Semester)
+(3) CS 325 Software Engineering
+(3) CS 447 Networks and Data Communications
+(3) CS 330 Programming Languages
+(3) Breadth Life Science (BLS)
+(3) Interdisciplinary Studies
+15 – Total Credits
+
+Year 4 (Fall Semester)
+(3) CS 425 Senior Project: Software Design
+(3) CS Elective I
+(3) CS Elective II
+(3) CS Elective III
+(3) Breadth Social Science (BSS)
+15 – Total Credits
+
+Year 4 (Spring Semester)
+(3) CS 499-Senior Project: Software Implementation
+(3) CS Elective IV
+(3) CS Elective V
+(1) Health Experience (EH)
+(3) U.S. Race, Gender, and Equity (ERGU) or Global Cultures, Race, and Equity Education (EREG)*
+13 - Total Credits
+* If a course satisfies both the EREG  and ERGU requirements, students will be given credit for one of the attributes and need to take a course that fulfills the other attribute.
+
+Total Hours 120
+
