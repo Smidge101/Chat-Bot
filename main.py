@@ -10,7 +10,7 @@ import re
 # -----------------------------
 # Configuration
 # -----------------------------
-API_KEY = "AIzaSyDTrJGYOwBdZvkO2OHKX65Zm1FRLaWhuRU "
+API_KEY = os.getenv("API_KEY")
 DATA_FILES = ["sample.txt", "sample1.txt", "sample2.txt", "sample3.txt", "sample4.txt", "sample5.txt"]
 EMBEDDING_MODEL = "models/gemini-embedding-001"  # Must match your stored embeddings
 MODEL_ID = "gemini-3-flash-preview"  # for generating answers
