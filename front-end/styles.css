@@ -1,0 +1,63 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title
+{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.profile-img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.chat-box
+{
+    position: relative;
+    display: inline-block;
+}
+
+#user-input
+{
+    border-radius: 25px;
+    background-color: #f5f3eb;
+    padding: 20px;
+    border-color: none;
+    width: 600px;
+    height: 5px;
+}
+#send-btn
+{
+    font-size: 25px;
+    width: 40px;
+    position: absolute;
+    top: 51%;
+    left: 907px;
+    background-color: #433120;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+.bot-response
+{
+    width: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: none;
+    color: grey;
+    border-radius: 10px;
+    font-size: 18px;
+}

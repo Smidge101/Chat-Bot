@@ -1,0 +1,68 @@
+Sample Curriculum for the Bachelor of Arts in Computer Science
+
+Year 1 (Fall Semester)
+(3) CS 111 Concepts of Computer Science (BICS)
+(3) CS 140 Introduction to Computing I
+(3) ENG 101 English Composition
+(3) ACS 103 Interpersonal Communication Skills (ERGU)
+(1) FST 101 Succeeding & Engaging at SIUE
+(3) Unrestricted/Minor Elective
+16 – Total Credits
+
+Year 1 (Spring Semester)
+(3) CS 150 Introduction to Computing II
+(3) ENG 102 English Composition II
+(3) RA 101 Reasoning & Argumentation
+(5) MATH 150 Calculus I (FQR)
+(3) MATH 224 Discrete Mathematics (BPS)
+17 – Total Credits
+
+Year 2 (Fall Semester)
+(3) CS 234 Database and Web System Development
+(4) Foreign Language 101  (EREG)
+(3) Breadth Fine & Performing Arts (BFPA)
+(3) Breadth Humanities (BHUM)
+(1) Health Experience
+(3) Unrestricted/Minor Elective
+17 – Total Credits
+
+Year 2 (Spring Semester)
+(3) CS 286 Intro to Computer Organization & Architecture
+(4) STAT 244 Statistics (BICS)
+(4) Foreign Language 102 
+(3) Breadth Social Science (BSS)
+14 – Total Credits
+
+Year 3 (Fall Semester)
+(3) CS 360 Ethical and Social Implications of Computing
+(3) CS 340 Algorithms and Data Structures
+(3) CS 314 Operating Systems
+(3) Fine & Performing Arts or Humanities
+(3) Unrestricted/Minor Elective
+15 – Total Credits
+
+Year 3 (Spring Semester)
+(3) CS 325 Software Engineering
+(3) CS 330 Programming Languages
+(3) CS 447 Networks and Data Communications
+(3) Interdisciplinary Studies
+(3) Fine & Performing Arts or Humanities
+15 – Total Credits
+
+Year 4 (Fall Semester)
+(3) CS 425 Senior Project: Software Design
+(3) CS Elective I
+(3) Breadth Life Science (BLS)/Lab Experience (EL)
+(3) Fine & Performing Arts or Humanities
+(3) Unrestricted/Minor Elective
+15 – Total Credits
+
+Year 4 (Spring Semester)
+(3) CS 499-Senior Project: Software Implementation
+(3) CS Elective II
+(3) Fine & Performing Arts or Humanities
+(3) Unrestricted/Minor Elective
+(3) Unrestricted/Minor Elective
+15 - Total Credits
+
+Total Hours 124
