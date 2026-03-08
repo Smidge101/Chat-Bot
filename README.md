@@ -1,5 +1,5 @@
 # This is an AI chatbot for students to ask questions about classes and class requirements for their degree.
-# Languages Used: Python, HTML, CSS, J
+# Languages Used: Python, HTML, CSS, JavaScript
 # To start the project, we started by drafting an overview of what the Chatbot would do and the steps we would have to take in order to complete this task.
 # This is a VERY rough draft of what we had planned for the AI Chatbot. 
 # To start, we researched 5 of the most popular majors at SIUE.
